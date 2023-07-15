@@ -26,6 +26,12 @@
 #
 # NOTE: There will also be lists tested of lengths upwards of 10,000,000 elements. Be sure your code doesn't time out.
 
+# def sum_pairs(ints, s):
+#     # iterate to log a potential number2 first as it has to have the lowest index possible after number 1 then check the log to find the first matching number 1 that would have preceded it.
+#     for number2 in ints:
+#         number1 = s - number2
+#         if number1 in ints[:ints.index(number2)]:
+#             return [number1, number2]
 
 
 def sum_pairs(ints, s):
