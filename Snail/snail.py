@@ -72,3 +72,23 @@ print(snail([[1, 2, 3, 4],
              [9, 10, 11, 12],
              [13, 14, 15, 16]]
             ))
+
+
+# other answer
+# def snail(array):
+#     if array:
+#         # Get the top row of the array
+#         top_row = list(array[0])
+#
+#         # Rotate the array by switching remaining rows and columns using zip
+#         # The * operator is used to unpack the remaining rows (array[1:]) so that they can be matched by column
+#         rotated_array = zip(*array[1:])
+#
+#         # Then, reverse the rows to make the formerly last column the next top row
+#         rotated_array = rotated_array[::-1]
+#
+#         # Return the top row concatenated with the snail traversal of the rotated_array
+#         return top_row + snail(rotated_array)
+#     else:
+#         # If the array is empty, return an empty list
+#         return []
